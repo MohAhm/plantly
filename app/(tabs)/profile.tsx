@@ -1,13 +1,14 @@
+import { PlantlyButton } from "@/components/PlantlyButton";
 import { useUserStore } from "@/store/userStore";
 import { theme } from "@/theme";
-import { Button, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 export default function ProfileScreen() {
   const toggleHadOnboarded = useUserStore((state) => state.toggleHadOnboarded);
 
   return (
     <View style={styles.container}>
-      <Button title="Back to onboarding" onPress={toggleHadOnboarded} />
+      <PlantlyButton title="Back to onboarding" onPress={toggleHadOnboarded} />
     </View>
   );
 }
