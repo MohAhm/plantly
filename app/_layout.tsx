@@ -9,7 +9,11 @@ export default function Layout() {
       />
       <Stack.Screen
         name="onboarding"
-        options={{ headerShown: false, animation: "fade" }}
+        options={{
+          presentation: "modal",
+          headerShown: false,
+          animation: "fade",
+        }}
       />
       <Stack.Screen
         name="new"
